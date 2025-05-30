@@ -1,0 +1,45 @@
+<%- include("partials/header") %>
+
+<h6 id="disclaimer" class="text-white">Note: Crime data for Scotland may appear lower than reality, as it only includes
+    reports from British Transport Police.</h6>
+
+<div class="center" id="input-area">
+  <form action="/result" method="get">
+    <div id="input-1">
+        <label for="latitude">Latitude:</label>
+        <input type="number" step="any" id="latitude" name="latitude" required>        
+    </div>
+    <br>
+    <div id="input-2">
+        <label for="longitude">Longitude:</label>
+        <input type="number" step="any" id="longitude" name="longitude" required>        
+    </div>
+    <br>
+    <div id="input-3">
+        <label for="year">Year:</label>
+        <input type="number" step="any" id="year" name="year" required>        
+    </div>
+    <br>
+    <div id="input-4">
+      <label for="month">Month:</label>
+      <select name="month" id="month" required>
+        <option value="">Select a month</option>
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
+    </div>
+    <button type="submit" id="submitButton">Find Crimes</button>
+  </form>
+</div>
+
+<%- include("partials/footer.ejs") %>

@@ -1,0 +1,112 @@
+body {
+  background-color: #141c38;
+  color: #ededed;
+}
+
+#header {
+  display: block;
+  margin-bottom: 0 auto;
+}
+
+#disclaimer {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#submitButton {
+  border: none;
+  box-shadow: none;
+
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-area {
+  margin: 80px auto;
+}
+
+#input-area > form {
+  width: 40%;
+}
+
+#input-area > form > div {
+  margin-bottom: 20px;
+}
+
+#input-1, #input-2 {
+    width: 100%;
+}
+
+#input-1 input, #input-2 input, #input-3 input, #input-4 select {
+    float: right;
+}
+
+#input-area button[type="submit"] {
+  display: block;
+  margin: 0 auto;
+}
+
+#flag {
+  width: 60px;
+  height: 30px;
+}
+
+#footer {
+  max-width: none !important;
+  width: 100%;
+  background-color: #0c1124;
+  color: #2c3452;
+  padding-bottom: -100px;
+}
+
+.dataTemplate {
+  background-color: #212c53;
+  border-radius: 20px;
+  width: 50%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  padding: 20px;
+}
+
+.dataTemplate .dataType {
+  float: left;
+}
+
+.dataTemplate .dataValue {
+  float: right;
+}
+
+.data-1, .data-2, .data-3, .data-4 {
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.data-1 {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.data-4 {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.data-1, .data-3 {
+  background-color: #2d3968;
+  display: flex;
+  align-items: center;
+}
+
+.data-2, .data-4 {
+  background-color: #1b2344;
+}
