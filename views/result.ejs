@@ -5,23 +5,23 @@
     <h6><%=i+1%></h6>
     <div class="data-1">
       <p class="dataType">Category</p>
-      <p class="dataValue"><%= data[i].category %></p>
+      <p class="dataValue"><%= data[i].category ? data[i].category : "Null" %></p>
     </div>
     <div class="data-2">
       <p class="dataType">Location</p>
-      <p class="dataValue"><%= data[i].location.street.name %></p>
+      <p class="dataValue"><%= data[i].location ? data[i].location.street.name : "Null" %></p>
     </div>
     <div class="data-3">
       <p class="dataType">Outcome</p>
-      <p class="dataValue"><%= data[i].outcome_status.category %></p>
+      <p class="dataValue"><%= data[i].outcome_status ? data[i].outcome_status.category : "Null" %></p>
     </div>
     <div class="data-4">
       <p class="dataType">Date</p>
-      <p class="dataValue"><%= data[i].month %></p>
+      <p class="dataValue"><%= data[i].month ? data[i].month : "Null" %></p>
     </div>
   </div>
 <%}%>
 
-<button ></button>
+<a href="/" id="back"><button >Back Home</button></a>
 
 <%- include("partials/footer.ejs") %>
