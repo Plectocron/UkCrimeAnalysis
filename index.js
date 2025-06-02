@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", (req, res) => {
     res.render("index");
-})
+});
 
 app.get("/result", async (req, res) => {
     try {
@@ -22,8 +22,8 @@ app.get("/result", async (req, res) => {
         console.log(`Error message: ${error}`);
         res.sendStatus(404);
     }
-})
+});
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}.`);
-})
+});
