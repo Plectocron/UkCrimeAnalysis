@@ -34,7 +34,8 @@ body {
 }
 
 #input-area > form {
-  width: 40%;
+  width: 100%;
+  max-width: 400px;
 }
 
 #input-area > form > div {
@@ -70,8 +71,9 @@ body {
 .dataTemplate {
   background-color: #212c53;
   border-radius: 20px;
-  width: 50%;
-  height: 220px;
+  width: 100%;
+  max-width: 600px;
+  min-height: 220px;
   display: flex;
   flex-direction: column;
   margin: 10px auto;
